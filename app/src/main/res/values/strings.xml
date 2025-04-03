@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Midwifery Application</string>
+    <string name="logo">Logo</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_home">Beranda</string>
+    <string name="title_faq">FAQ</string>
+    <string name="title_profile">Profil</string>
+    <string name="kemahasiswaan">KEMAHASISWAAN</string>
+    <string name="back">back</string>
+    <string name="kampus">POLITEKNIK KESEHATAN\nJAKARTA 1\nJURUSAN\nKEPERAWATAN GIGI</string>
+    <string name="berita"><![CDATA[Berita & Informasi Jurusan Keperawatan Gigi]]></string>
+    <string name="sejarah">SEJARAH JURUSAN\nKEPERAWATAN GIGI</string>
+    <string name="sejarah2">Gedung Pendidikan Terpadu Poltekkes Jakarta I Jurusan Keperawatan Gigi. Jl. Wijayakusuma Raya No. 47-48 Cilandak Jakarta Selatan, telp : 021-27656913</string>
+    <string name="sejarah3">Gedung Lama Poltekkes Jakarta I Jurusan Keperawatan Gigi. Jl. RS. Fatmawati Cilandak Barat Jakarta Selatan</string>
+    <string name="sejarah4">Gedung Lama Poltekkes Jakarta I Jurusan Keperawatan Gigi. Jl. RS. Fatmawati Cilandak Barat Jakarta Selatan</string>
+    <string name="visi"><![CDATA[VISI & MISI JURUSAN\nKEPERAWATAN GIGI]]></string>
+    <string name="akreditasi">AKREDITASI JURUSAN \nKEPERAWATAN GIGI</string>
+    <string name="donwload">Silahkan Download Akreditasi \nSelengkapnya pada link Berikut ini :</string>
+    <string name="link">http://link.kemkes.go.id/AkreditasiKesehatanGigi</string>
+    <string name="tenaga">TENAGA PENDIDIK DAN\nKEPENDIDIKAN</string>
+    <string name="struktur">STRUKTUR ORGANISASI\n2024 - 2028</string>
+</resources>
