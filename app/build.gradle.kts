@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.midwiferyapplication"
+    namespace = "com.example.dentalnursing"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.example.midwiferyapplication"
+        applicationId = "com.example.dentalnursing"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
