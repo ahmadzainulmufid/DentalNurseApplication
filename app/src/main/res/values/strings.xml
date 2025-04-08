@@ -19,4 +19,8 @@
     <string name="link">http://link.kemkes.go.id/AkreditasiKesehatanGigi</string>
     <string name="tenaga">TENAGA PENDIDIK DAN\nKEPENDIDIKAN</string>
     <string name="struktur">STRUKTUR ORGANISASI\n2024 - 2028</string>
+    <string name="akreditasii"><u>Akreditasi</u></string>
+    <string name="fasilitas"><u>Fasilitas</u></string>
+    <string name="galeri"><u>Galeri</u></string>
+    <string name="prestasi"><u>Prestasi</u></string>
 </resources>

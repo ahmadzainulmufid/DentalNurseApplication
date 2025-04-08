@@ -9,8 +9,8 @@ import androidx.fragment.app.Fragment
 import com.example.dentalnursing.ui.akreditas.AkreditasActivity
 import com.example.dentalnursing.ui.fasilitas.FasilitasActivity
 import com.example.dentalnursing.ui.galeri.GaleriActivity
-import com.example.dentalnursing.ui.mahasiswa.MahasiswaActivity
 import com.example.dentalnursing.databinding.FragmentHomeBinding
+import com.example.dentalnursing.ui.mahasiswa.PrestasiActivity
 
 class HomeFragment : Fragment() {
 
@@ -29,10 +29,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setupIntentViews() {
-        binding.tvPrestasi.setOnClickListener {
-            startActivity(Intent(requireContext(), MahasiswaActivity::class.java))
-        }
-        binding.tvAkreditas.setOnClickListener {
+        binding.tvAkreditasi.setOnClickListener {
             startActivity(Intent(requireContext(), AkreditasActivity::class.java))
         }
         binding.tvFasilitas.setOnClickListener {
@@ -40,6 +37,9 @@ class HomeFragment : Fragment() {
         }
         binding.tvGaleri.setOnClickListener {
             startActivity(Intent(requireContext(), GaleriActivity::class.java))
+        }
+        binding.tvPrestasi.setOnClickListener {
+            startActivity(Intent(requireContext(), PrestasiActivity::class.java))
         }
     }
 

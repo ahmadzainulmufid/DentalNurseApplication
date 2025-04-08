@@ -38,11 +38,9 @@
 
         <!-- Teks galeri -->
 
-        <!-- Grid layout for images -->
-
         <TextView
             android:id="@+id/tv_galeri"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="100dp"
             android:gravity="center"

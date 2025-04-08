@@ -13,10 +13,12 @@
         <!-- Background Header -->
         <ImageView
             android:id="@+id/vector1"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
             android:scaleType="centerCrop"
             android:src="@drawable/vector15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <!-- Tombol Back -->
@@ -50,7 +52,7 @@
         <!-- Card Struktur Organisasi -->
         <androidx.cardview.widget.CardView
             android:id="@+id/card1"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             app:cardCornerRadius="12dp"
@@ -75,14 +77,536 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
-        <!-- Structure Image Below -->
-        <ImageView
-            android:id="@+id/full_screen_image"
+        <!-- Struktur Organisasi -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/isistruktur"
-            android:layout_marginTop="16dp"
-            app:layout_constraintTop_toBottomOf="@id/card1" />
+            android:orientation="vertical"
+            android:layout_marginTop="220dp"
+            app:layout_constraintTop_toTopOf="@+id/card1"
+            android:padding="16dp">
+
+            <!-- Ketua Jurusan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ketua Jurusan:"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Ngatemi, S.SiT, M.KM"
+                        android:textColor="#000000" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Sekretaris Jurusan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sekretaris Jurusan :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Indrayati Fadjeri, S.SiT, M.Kes"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Penanggung Jawab Kemahasiswaan -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanggung Jawab Penelitian dan Pengabdian Kepada Masyarakat :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="drg. Nita noviani Harahap, MKM"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Penanggung Jawab Akademik -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanggung Jawab Pengembangan Pendidikan :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Emini, S.SiT, MA.Kes"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Footer -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanggung Jawab Penjaminan Mutu :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Ni Nyoman Kasihani, S.Si.T, M.Kes"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanggung Jawab Laboratorium :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Dewi Candra Pribawanti, A.MKG, S.Si.T"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanggung Jawab Akademik :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Rini Widyastuti, S.SiT, M.Kes"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Penanggung Jawab Kemahasiswaan :"
+                        android:textColor="#000000"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="Erwin, M.Kes"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="12dp">
+
+                <!-- Area garis dan bullet -->
+                <LinearLayout
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+
+                    <!-- Bullet -->
+                    <View
+                        android:layout_width="8dp"
+                        android:layout_height="8dp"
+                        android:layout_marginVertical="4dp"
+                        android:background="@drawable/circle_green" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="#0A5F66"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <!-- Isi Teks -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:text="KELOMPOK JABATAN FUNGSIONAL DOSEN/PLP"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

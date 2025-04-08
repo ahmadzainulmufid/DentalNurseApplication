@@ -27,7 +27,7 @@
 
         <TextView
             android:id="@+id/tv_visi_misi"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
 
@@ -212,7 +212,7 @@
         </androidx.cardview.widget.CardView>
 
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/vector10"
             android:layout_marginTop="100dp"

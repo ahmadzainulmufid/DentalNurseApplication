@@ -1,9 +1,12 @@
 package com.example.dentalnursing.ui.akreditas
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dentalnursing.R
 import android.widget.ImageButton
+import android.widget.TextView
 
 
 class AkreditasActivity : AppCompatActivity() {
@@ -11,13 +14,21 @@ class AkreditasActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_akreditas)
 
-        // Find the back button by its ID
         val btnBack: ImageButton = findViewById(R.id.btn_back)
+        val tvLink: TextView = findViewById(R.id.tv_link)
 
-        // Set an OnClickListener to handle the back button press
+        val linkText = "http://link.kemkes.go.id/AkreditasiKesehatanGigi"
+        val spannable = android.text.SpannableString(linkText)
+        spannable.setSpan(android.text.style.UnderlineSpan(), 0, linkText.length, 0)
+        tvLink.text = spannable
+
         btnBack.setOnClickListener {
-            // Handle the back button press
-            onBackPressed() // This will navigate back to the previous activity
+            onBackPressed()
+        }
+
+        tvLink.setOnClickListener {
+            val urlIntent = Intent(Intent.ACTION_VIEW, Uri.parse("http://link.kemkes.go.id/AkreditasiKesehatanGigi"))
+            startActivity(urlIntent)
         }
     }
 }

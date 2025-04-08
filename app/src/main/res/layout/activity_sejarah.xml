@@ -11,7 +11,7 @@
 
         <!-- Image at the top -->
         <ImageView
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:src="@drawable/vectorsejarah"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,7 +34,7 @@
         <!-- Title TextView -->
         <TextView
             android:id="@+id/tv_faq"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="32dp"
             android:elevation="10dp"

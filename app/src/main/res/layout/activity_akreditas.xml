@@ -10,7 +10,7 @@
     <!-- Vector 1 -->
     <ImageView
         android:id="@+id/vector1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/vector12"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +33,7 @@
     <!-- Teks akreditas -->
     <TextView
         android:id="@+id/tv_kemahasiswaan"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/akreditasi"
         android:textColor="@android:color/white"
@@ -101,14 +101,16 @@
 
     <TextView
         android:id="@+id/tv_link"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:textSize="12sp"
         android:text="@string/link"
         android:gravity="center"
+        android:textColor="@android:color/black"
         android:layout_marginTop="20dp"
+        android:textStyle="bold"
         app:layout_constraintTop_toBottomOf="@+id/tv_download_info"
         app:layout_constraintStart_toStartOf="parent"
-        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"/>
 
     <ImageView

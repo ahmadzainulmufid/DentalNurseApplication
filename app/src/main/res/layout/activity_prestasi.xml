@@ -9,7 +9,7 @@
     <!-- Vector 1 -->
     <ImageView
         android:id="@+id/vector1"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:src="@drawable/vector3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,7 +35,7 @@
 
     <TextView
         android:id="@+id/tv_kemahasiswaan"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:text="@string/kemahasiswaan"
@@ -74,7 +74,7 @@
     <!-- CardView -->
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
         android:layout_marginTop="40dp"
